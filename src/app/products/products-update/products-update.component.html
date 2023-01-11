@@ -1,0 +1,36 @@
+<mat-card>
+  <mat-toolbar color="primary">
+    <span>Atualizando o Produto</span>
+  </mat-toolbar>
+
+  <!-- formulário de atualização -->
+  <mat-card-content>
+    <form [formGroup]="form" class="min-width">
+
+      <!-- novo nome para o produto -->
+      <mat-form-field appearance="fill" class="full-width">
+        <input
+          matInput
+          placeholder="Nome do produto"
+          formControlName="nome"
+        />
+      </mat-form-field>
+
+      <!-- novo valor para o preço do produto -->
+      <mat-form-field appearance="fill" class="full-width">
+        <input
+          typematInput
+          placeholder="Preço do produto"
+          formControlName="preco"
+        />
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+
+  <!-- opções para salvar ou cancelar uma atualização de produto -->
+  <mat-card-actions>
+    <button mat-raised-button color="primary" (click)="onSubmit()"> Salvar </button>
+    <button mat-raised-button (click)="onCancel()"> Cancelar </button>
+  </mat-card-actions>
+
+</mat-card>

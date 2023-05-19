@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 
-import { AppMaterialModule } from './../shared/app-material/app-material.module';
+import { AppMaterialModule } from '../shared/app-material/app-material.module';
 import { ProductsFormComponent } from './products-form/products-form.component';
 import { ProductsRoutingModule } from './products-routing.module';
 import { ProductsComponent } from './products/products.component';
